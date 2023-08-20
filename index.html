@@ -19,12 +19,13 @@
 
             <div>
                 <h4 class="text-center text-xs md:text-lg ">---SALE FEVER---</h4>
-                <h1 class="text-sm lg:text-4xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20%
+                <h1 class="text-sm lg:text-4xl font-bold">Purchase TK 200 or <br> above & get <span
+                        class="text-[#E527B2]">20%
                         off</span></h1>
 
                 <div class="flex gap-3 mt-4 justify-center items-center">
                     <p class="text-xs lg:text-xl font-semibold ">Use Promo Code</p>
-                    <button class="btn  btn-sm bg-[#E527B2] lg:px-3 py-1 rounded-md text-white ">SELL200</button>
+                    <button class=" bg-[#E527B2] lg:px-3 py-1 rounded-md text-white ">SELL200</button>
                 </div>
             </div>
             <div>
@@ -34,43 +35,18 @@
     </header>
 
     <main>
-        <div class="my-4 px-3 py-4 w-[70%] md:hidden mx-auto">
-            <div class="bg-white shadow-md py-2 lg:py-5 px-1 lg:px-3 rounded-md">
-                <p class="md:font-semibold font-medium mb-2">Have coupon?</p>
-                <div class="form-control">
-                    <div class="input-group">
-                        <input type="text" placeholder="Coupone code" class="input input-bordered w-[100px] md:w-[140px]" />
-                        <button class="btn bg-[#E527B2] text-white">
-                            Apply
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 px-3 py-4 shadow-md">
-                <div class="product-name">
-                </div>
-                <hr class="my-2">
-                <div class="font-medium">
-                    <p>Total Price : </p>
-                    <p>Discount : </p>
-                    <p>Total : </p>
-                </div>
-                <hr class="my-4">
-    
-                <button class="btn bg-[#E527B2] text-white">Make Purchase</button>
-            </div>
-        </div>
+ 
         <section class="flex justify-evenly">
             <div>
                 <div>
                     <p class="font-semibold lg:font-bold mb-5 text-xl lg:text-2xl">Kitchenware</p>
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56  ">
+                        <div class="button" id="FirstCard" data-product-price="39.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56  ">
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod1.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
-                                <div class="card-body items-center text-center gap-0 pt-0">
+                                <div class="card-body items-center text-center gap-0 pt-0 ">
                                     <div>
                                         <i class="fa-solid fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-solid fa-star text-yellow-400 fa-2xs"></i>
@@ -78,13 +54,14 @@
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="firstName" class="lg:font-bold font-medium">K. Accessories</p>
+                                    <p class="text-gray-500 text-xs md:text-base"><span id="productPrice">39.00</span>
+                                        TK</p>
                                 </div>
                             </div>
-                        </button>
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56 ">
+                        </div>
+                      <div class="button" id="secondCard" data-product-price="25.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56" >
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod2.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
@@ -96,13 +73,13 @@
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="secondName" class=" lg:font-bold font-medium">M. Accessories</p>
+                                    <p class="text-gray-500 text-xs md:text-base">25.00 TK</p>
                                 </div>
                             </div>
-                        </button>
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56  ">
+                        </div>
+                        <div class="button" id="thirdCard" data-product-price="49.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56 ">
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod3.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
@@ -114,21 +91,21 @@
                                         <i class="fa-solid fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="thirdName" class=" lg:font-bold font-medium">Home Cooker</p>
+                                    <p class="text-gray-500 text-xs md:text-base">49.00 TK</p>
                                 </div>
                             </div>
-                        </button>
-    
+                        </div>
+
                     </div>
                 </div>
-    
-    
+
+
                 <div class="md:mt-9 mt-6">
                     <p class="font-semibold lg:font-bold mb-5 text-xl lg:text-2xl">Sportsware</p>
                     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56 ">
+                        <div class="button" id="fourthCard" data-product-price="49.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56 ">
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod4.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
@@ -140,13 +117,13 @@
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="fourthName" class=" lg:font-bold font-medium">Sports Back Cap</p>
+                                    <p class="text-gray-500 text-xs md:text-base">49.00 TK</p>
                                 </div>
                             </div>
-                        </button>
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56  ">
+                        </div>
+                        <div class="button" id="fifthCard" data-product-price="49.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56 ">
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod5.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
@@ -158,14 +135,13 @@
                                         <i class="fa-solid fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="fifthName" class=" lg:font-bold font-medium">Full Jersey Set</p>
+                                    <p class="text-gray-500 text-xs md:text-base">69.00 TK</p>
                                 </div>
                             </div>
-                        </button>
-    
-                        <button id="btn">
-                            <div class="card shadow-xl rounded-md w-56  ">
+                        </div>
+                        <div class="button" id="sixthCard" data-product-price="49.00">
+                            <div class="card shadow-xl rounded-md w-32 lg:w-56 ">
                                 <figure class=" bg-gray-300 h-20 lg:h-28">
                                     <img src="./images/prod6.png" alt="Shoes" class="lg:w-24 w-16" />
                                 </figure>
@@ -177,42 +153,63 @@
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                         <i class="fa-regular fa-star text-yellow-400 fa-2xs"></i>
                                     </div>
-                                    <p class="lg:font-bold font-medium">K. Accessories</p>
-                                    <p class="text-gray-500 text-xs md:text-base">39.00 TK</p>
+                                    <p id="sixthName" class=" lg:font-bold font-medium">Sports cates</p>
+                                    <p class="text-gray-500 text-xs md:text-base">49.00 TK</p>
                                 </div>
                             </div>
-                        </button>
-    
+                        </div>
+                       
     
                     </div>
-                </div>
+                </div> 
             </div>
-    
-            <div class="md:mt-4 hidden md:block w-[30%]">
+
+             <div class="md:mt-4 w-[49%] md:w-[30%]">
+            
                 <div class="bg-white shadow-md py-2 lg:py-5 px-1 lg:px-3 rounded-md">
-                    <p class="md:font-semibold font-medium mb-2">Have coupon?</p>
+                    <p class="md:font-semibold text-xs md:text-base font-medium mb-2">Have coupon?</p>
                     <div class="form-control">
                         <div class="input-group">
-                            <input type="text" placeholder="Coupone code"
-                                class="input input-bordered w-[100px] md:w-[140px]" />
-                            <button class="btn bg-[#E527B2] text-white">
+                            <input id="couponInput" type="text" placeholder="Coupon code"
+                                class="input input-bordered w-[60px] h-[32px] lg:w-[130px] md:w-[140px]" />
+                            <button id="coupone" disabled class="btn btn-sm  bg-[#E527B2] text-white">
                                 Apply
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 px-3 py-4 shadow-md">
+
+                <div class="mt-4 px-3 py-4 shadow-md text-xs md:text-base">
                     <div class="product-name">
+                        <ol id="productList"></ol>
                     </div>
                     <hr class="my-2">
-                    <div class="font-medium">
-                        <p>Total Price : </p>
-                        <p>Discount : </p>
-                        <p>Total : </p>
+                    <div id="payment" class="font-medium">
+                        <p>Total Price : <span id="price" class="total-price text-gray-400">00.00</span>TK</p>
+                        <p>Discount : <span id="discount" class="text-gray-400">00.00</span>TK</p>
+                        <p>Total : <span id="total" class="text-gray-400">00.00</span>TK</p>
                     </div>
                     <hr class="my-4">
-    
-                    <button class="btn bg-[#E527B2] text-white">Make Purchase</button>
+
+
+                    <button onclick="my_modal_7.showModal()" id="purchase" disabled
+                        class="btn bg-[#E527B2] text-white btn-sm">Make Purchase</button>
+
+
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle text-center">
+                        <form method="dialog" class="modal-box ">
+                            <img width="100" class="mx-auto" height="100" src="https://img.icons8.com/clouds/100/confetti.png"
+                                alt="confetti" />
+                                <p class="text-2xl font-bold">Congratulations!</p>
+                                <p class="text-gray-400">Your Purchase the product</p>
+                            <div class="modal-action w-[20%] mx-auto">
+                                <!-- if there is a button in form, it will close the modal -->
+                               <a href="#"> <button id="home" class="btn bg-[#E527B2] text-white ">Home</button></a>
+                            </div>
+                        </form>
+                    </dialog>
                 </div>
             </div>
         </section>
@@ -221,7 +218,7 @@
 
     <footer class="mt-20 text-gray-700 py-4 text-center">
         <p>&copy; 2023 SummerSale. All rights reserved.</p>
-      </footer>
+    </footer>
 
 
 
